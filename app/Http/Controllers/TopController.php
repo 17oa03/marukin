@@ -7,13 +7,15 @@ use Illuminate\Http\Request;
 class TopController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Top
      *
-     * @return Response
+     * @param Request $request
+     * @return
      */
-
-    public function index()
+    public function index(Request $request)
     {
+        // 検索処理(一覧取得処理)
+
         return view('tops.index');
     }
 
@@ -26,6 +28,7 @@ class TopController extends Controller
     {
         //
     }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -35,7 +38,6 @@ class TopController extends Controller
     {
         //
     }
-
 
     /**
      * Display the specified resource.
@@ -48,7 +50,6 @@ class TopController extends Controller
         //
     }
 
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -60,7 +61,6 @@ class TopController extends Controller
         //
     }
 
-
     /**
      * Update the specified resource in storage.
      *
@@ -71,7 +71,6 @@ class TopController extends Controller
     {
         //
     }
-
 
     /**
      * Remove the specified resource from storage.

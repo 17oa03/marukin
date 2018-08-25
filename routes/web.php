@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('tops', 'TopController@index');
+// Top routing
+Route::resource('tops', 'TopController');
